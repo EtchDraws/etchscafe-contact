@@ -85,17 +85,7 @@ body, html {
 </div>
 
   <footer class="w3-center w3-black w3-padding-48 w3-large">
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  chat-icon="https://cdn4.iconfinder.com/data/icons/aiga-symbol-signs/444/aiga_information-512.png"
-  intent="openintent"
-  chat-title="Hope"
-  agent-id="b1d2f039-0e00-4c36-9901-81716d010cb8"
-  language-code="en"
-></df-messenger>
- <p>.</p>
-</footer>
-  <form method="post" action="//submit.form" onSubmit="return validateForm();">
+    <form method="post" action="//submit.form" onSubmit="return validateForm();">
 <div style="max-width: 400px;">
 </div>
 <div style="padding-bottom: 18px;font-size : 24px;">Mailing List Subscription</div>
@@ -144,5 +134,16 @@ var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.
 return isEmpty(email) || re.test(email);
 }
 </script>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https://cdn4.iconfinder.com/data/icons/aiga-symbol-signs/444/aiga_information-512.png"
+  intent="openintent"
+  chat-title="Hope"
+  agent-id="b1d2f039-0e00-4c36-9901-81716d010cb8"
+  language-code="en"
+></df-messenger>
+ <p>.</p>
+</footer>
+ 
   </body>
 </html>
