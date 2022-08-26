@@ -55,7 +55,7 @@ p {
   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 21%, #2cb5e8 75%);
   
 }
- %#cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #FFFFFF; z-index:9999;}%
+ #cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #FFFFFF; z-index:9999;}
 </style>
  <body>
   <div id="cover"></div>
@@ -111,14 +111,14 @@ p {
     <p>Find me at etchdrawscontact@gmail.com </p>
   <html>
   <head>
-    <title>reCAPTCHA demo: Simple page</title>
+    
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
-    <form action="?" method="POST">
+    <form action="" method="POST">
       <div class="g-recaptcha" data-sitekey="6LfITdAaAAAAAP7n2vxnidoLd41XD5a6nuZEPEZl"></div>
       <br/>
-      <input type="submit" value="Submit">
+      <input onclick="myFunction2()" type="submit" value="Submit">
     </form>
   </body>
 </html>
@@ -140,7 +140,16 @@ p {
 ></df-messenger>
  </div>
 </div>
-
+<script>
+function myFunction2() {
+  var x = document.getElementById("cover");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
  
     
 
