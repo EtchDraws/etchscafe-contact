@@ -61,16 +61,25 @@ p {
  #cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #000; z-index:9998; visibility: hidden;}
 </style>
  <html>
-  <head class="ye">
-    
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <head>
+    <title>reCAPTCHA demo: Explicit render after an onload callback</title>
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : '6LfITdAaAAAAAP7n2vxnidoLd41XD5a6nuZEPEZl'
+        });
+      };
+    </script>
   </head>
   <body>
-    <form action="" method="POST">
-      <div class="g-recaptcha" data-sitekey="6LfITdAaAAAAAP7n2vxnidoLd41XD5a6nuZEPEZl"></div>
-      <br/>
-     
+    <form action="?" method="POST">
+      <div id="html_element"></div>
+      <br>
+      <input type="submit" value="Submit">
     </form>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
   </body>
 </html>
  <body>
