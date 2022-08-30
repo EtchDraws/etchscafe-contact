@@ -29,6 +29,15 @@
   "hostname": string,         // the hostname of the site where the reCAPTCHA was solved
   "error-codes": [...]        // optional
 }
+ 
+ div.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+ 
  @media only screen and (max-width:500px) {
   /* For mobile phones: */
   .menu, .main, .right {
@@ -77,17 +86,7 @@ p {
    
     <div class="w3-col s3">
       <a href="https://etchdraws.github.io/etchscafe-home/#" class="w3-button w3-block w3-ripple w3-indigo w3-border w3-border-black">HOME</a> 
-      <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-   function onSubmit(token) {
-     document.getElementById("demo-form").submit();
-   }
- </script>
-
-<div class="g-recaptcha" 
-        data-sitekey="6Ld7wb4hAAAAAOMSVwKHoLNyL2ZiI7PHW5fAldg8" 
-        data-callback='onSubmit' 
-     data-action='submit'></div>
+     
     </div>
     <div class="w3-col s3">
       <a href="https://etchdraws.github.io/etchscafe-about/" class="w3-button w3-block w3-dark-grey w3-border w3-border-yellow">ABOUT</a>
@@ -118,6 +117,21 @@ p {
 <div class="w3-container bgimg" id="contact" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center"><span class="w3-tag w3-wide">WHERE TO CONTACT</span></h5>
+   
+   
+    <div class="fixed">
+   <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
+
+<div class="g-recaptcha" 
+        data-sitekey="6Ld7wb4hAAAAAOMSVwKHoLNyL2ZiI7PHW5fAldg8" 
+        data-callback='onSubmit' 
+     data-action='submit'></div>
+   </div>
     <p>Find me at etchdrawscontact@gmail.com </p>
   
     <p>Photo by <a href="https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pawel Czerwinski</a> on <a href="https://unsplash.com/s/visual/9995daa7-6c54-4bf9-8d96-c508200e8c33?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
