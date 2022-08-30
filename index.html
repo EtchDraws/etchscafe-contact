@@ -64,30 +64,9 @@ p {
   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 21%, #2cb5e8 75%);
   
 }
- #cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #000; z-index:9998;}
-</style>
- <html>
-  <head>
-    <title>reCAPTCHA demo: Explicit render after an onload callback</title>
-    <script type="text/javascript">
-      var onloadCallback = function() {
-        grecaptcha.render('html_element', {
-          'sitekey' : '6LfITdAaAAAAAP7n2vxnidoLd41XD5a6nuZEPEZl'
-        });
-      };
-    </script>
-  </head>
-  <body>
-    <form action="?" method="POST">
-      <div id="html_element"></div>
-      <br>
-      
-    </form>
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-        async defer>
-    </script>
-  </body>
-</html>
+ #cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #000; z-index:9998; visibility: hidden;}
+</style> 
+
  <body>
   <div id="cover">
   <script src="https://www.google.com/recaptcha/api.js"></script>
