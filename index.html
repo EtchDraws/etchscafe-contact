@@ -23,6 +23,12 @@
     width: 100%;
   }
 }
+ {
+  "success": true|false,
+  "challenge_ts": timestamp,  // timestamp of the challenge load (ISO format yyyy-MM-dd'T'HH:mm:ssZZ)
+  "hostname": string,         // the hostname of the site where the reCAPTCHA was solved
+  "error-codes": [...]        // optional
+}
  @media only screen and (max-width:500px) {
   /* For mobile phones: */
   .menu, .main, .right {
