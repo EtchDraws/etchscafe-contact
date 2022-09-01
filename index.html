@@ -36,6 +36,9 @@
  function refreshPage(){
     window.location.reload();
 } 
+  function stoppage(){
+   Windows.stop()
+ }
  div.fixed {
   position: fixed;
   bottom: 0;
@@ -84,6 +87,7 @@ p {
 
  <body>
  <html>
+  <div>
   <head>
     <title>reCAPTCHA demo: Simple page</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -96,10 +100,12 @@ p {
      
     </form>
   </body>
+  </div>
+  <script type="text/javascript">
+   stoppage();
+</script>
 </html>
-  <script>
-   Windows.stop()
-  </script>
+  stoppage()
   <div id="cover">
   <script>
    if (diy > 0.8) {
