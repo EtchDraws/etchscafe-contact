@@ -69,6 +69,9 @@ body, html {
  .menu {
   display: none;
 }
+ .ip {
+  onload="stoppage()"
+ }
  #ye {
   z-index:9999;
  }
@@ -84,10 +87,11 @@ p {
 }
  #cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #000; z-index:9998; visibility: hidden;}
 </style> 
-
+ 
  <body>
  <html>
-  <div>
+  <div class="ip">
+   
   <head>
     <title>reCAPTCHA demo: Simple page</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -101,11 +105,9 @@ p {
     </form>
   </body>
   </div>
-  <script type="text/javascript">
-   stoppage();
-</script>
+ 
 </html>
-  stoppage()
+  
   <div id="cover">
   <script>
    if (diy > 0.8) {
