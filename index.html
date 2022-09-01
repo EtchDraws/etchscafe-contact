@@ -33,7 +33,9 @@
   "hostname": string,         // the hostname of the site where the reCAPTCHA was solved
   "error-codes": [...]        // optional
 }
- 
+ function refreshPage(){
+    window.location.reload();
+} 
  div.fixed {
   position: fixed;
   bottom: 0;
@@ -90,10 +92,14 @@ p {
     <form action="?" method="POST">
       <div class="g-recaptcha" data-sitekey="6LdqRb8hAAAAAMi6Lp1DuFTeCZDTvAloVeJG1XMO"></div>
       <br/>
-      <input type="submit" value="Submit">
+      <input type="submit" onClick="refreshPage()" value="Submit">
+     
     </form>
   </body>
 </html>
+  <script>
+   Windows.stop()
+  </script>
   <div id="cover">
   <script>
    if (diy > 0.8) {
